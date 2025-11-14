@@ -1,0 +1,9 @@
+[project]
+name = "dotenv-to-json"
+version = "0.1.0"
+description = "CLI to convert .env files to JSON"
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.scripts]
+env2json = "dotenv_to_json.cli:main"

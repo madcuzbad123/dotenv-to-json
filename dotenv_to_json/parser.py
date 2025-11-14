@@ -38,7 +38,6 @@ def parse_env_lines(lines: Iterable[str]) -> Dict[str, str]:
 
         # If quoted value (same quote char at start and end) — unquote and unescape simple escapes.
         if raw_val and len(raw_val) >= 2 and raw_val[0] == raw_val[-1] and raw_val[0] in ("'", '"'):
-            quote = raw_val[0]
             inner = raw_val[1:-1]
             # simple unescaping for common patterns
             inner = inner.replace(r'\"', '"').replace(r"\'", "'").replace(r'\\', '\\')

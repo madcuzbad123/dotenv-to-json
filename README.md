@@ -4,7 +4,7 @@ A simple CLI tool to convert `.env` files to JSON format.
 
 ## Installation
 
-Install using `uv`:
+Install using [`uv` package manager](https://docs.astral.sh/uv/getting-started/installation/):
 
 ```bash
 make install

